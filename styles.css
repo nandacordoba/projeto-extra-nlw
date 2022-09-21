@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+}
+body {
+    background-image: url(./assets/jjupiter.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: black;
+}
+body * {
+    font-family: 'Gentium Plus', serif;
+    line-height: 160%;
+}
+header {
+    padding-top: 32px;
+    height: 152px;
+}
+header div {
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(#1e144d 0%, #4a81b4 25.52%, #914b39d3 50.50%, #a07044 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    transition: transform .3s;
+    
+}
+   
+header div img {
+    width: 100%;
+    border-radius: 50%;
+   
+}
+
+header div:hover {
+    transform: scale(1.1);}
+
+main {
+    max-width: 580px;
+    width: 90%;
+    margin: 32px auto;  
+    display: grid; 
+    gap: 30px;
+
+    
+   
+}
+
+section {
+    color: white;
+    background-image:linear-gradient(90deg, #1e144d 0%, #4a81b4 25.52%, #914b39d3 50.50%, #a07044 100%);
+    padding-top: 6px;
+    border-radius: 10px;
+}
+
+section div {
+   background-color: rgb(32, 50, 77); 
+    padding: 20px;
+    padding-top: 24px;
+    border-radius: 8px;
+
+}
+
+section h2 {
+ letter-spacing: -0.47px;
+color:rgb(136, 72, 46)    
+}
+
+section p  {
+    letter-spacing: -0.18px;
+    color:rgb(112, 81, 69)
+    
+    
+}
+
+section ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+section ul li {
+    transition: transform .3s;
+}
+
+section ul li:hover {
+    transform: scale(2.1);
+}
+
+.groups-list img {
+    width: 90px;
+    border-radius: 50%;
+   
+}
+
+.music-list img {
+    border-radius: 50%;
+    width: 70px;
+    
+}
+
+/* animation */
+
+
+header div {
+    animation: fromLeft  .8s .2s backwards;
+}
+main section {
+
+    animation: fromBottom .6s backwards;
+    }
+    main section:nth-child(1) {
+        animation-delay: 0s        
+}
+
+main section:nth-child(2) {
+    animation-delay: .2s;
+}
+
+main section:nth-child(3) {
+    animation-delay: .5s;
+
+
+
+    
+}
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to{
+        opacity: 3;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateX(40px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+   
