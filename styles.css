@@ -47,7 +47,7 @@ main {
     width: 90%;
     margin: 32px auto;  
     display: grid; 
-    gap: 30px;
+    gap: 24px;
 
     
    
@@ -56,7 +56,7 @@ main {
 section {
     color: white;
     background-image:linear-gradient(90deg, #1e144d 0%, #4a81b4 25.52%, #914b39d3 50.50%, #a07044 100%);
-    padding-top: 6px;
+    padding-top: 4px;
     border-radius: 10px;
 }
 
